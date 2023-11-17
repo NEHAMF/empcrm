@@ -1,10 +1,17 @@
 {%extends 'base.html'%}
 {%block body_block%}
+
+  
 <div class="container">
         <div>
             <div class="card" style="width: 18rem;">
                 <div class="card-header">
                   Employee Details
+                </div>
+                <div>
+                  {%if data.image%}
+                  <img src="{{data.image.url}}" alt="">
+                  {%endif%}
                 </div>
                 <ul class="list-group list-group-flush">
                   <li class="list-group-item">{{data.name}}</li>
