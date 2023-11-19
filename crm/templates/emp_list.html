@@ -2,8 +2,7 @@
 {%block body_block%}
 <div>
 Filter By
- {% for dep in departments%}
- <a href="{%url 'emp-list'%}?department={{dep}}">{{dep}}</a>
+ {% for dep in departments%}<a href="{%url 'emp-list'%}?department={{dep}}">{{dep}}</a>
  {%endfor%}
 </div>
 <div class="container">
